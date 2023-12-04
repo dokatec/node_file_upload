@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Uploads</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="container_h1">File Uploads</h1>
+      <form
+        class="container_form"
+        action="/uploads"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="container_form__input"
+          type="file"
+          name="file"
+          id="file"
+          multiple
+        />
+        <button class="container_button" type="submit">Upload</button>
+      </form>
+    </div>
+  </body>
+</html>
